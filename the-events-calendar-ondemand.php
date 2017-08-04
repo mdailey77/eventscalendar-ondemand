@@ -15,8 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-/*define( 'TRIBE_EVENTS_ONDEMAND_DIR', dirname( __FILE__ ) );
-define( 'TRIBE_EVENTS_ONDEMAND_FILE', __FILE__ );*/
 include_once( ABSPATH . 'wp-content/plugins/the-events-calendar/common/src/Tribe/Main.php' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
@@ -167,4 +165,3 @@ class Tribe_Events_OnDemand {
 }; // End of Tribe_Events_OnDemand class
 
 register_activation_hook( __FILE__, array( 'Tribe_Events_OnDemand', 'tribe_events_ondemand_activate' ) );
-//register_deactivation_hook( __FILE__, array( 'Tribe_Events_OnDemand', 'deactivate' ) );
